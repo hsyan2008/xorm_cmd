@@ -214,6 +214,10 @@ func tag(table *schemas.Table, col *schemas.Column) string {
 	if col.IsPrimaryKey {
 		res = append(res, "pk")
 	}
+
+	if len(col.Default) >= 4 && strings.HasPrefix(col.Default, "''") && strings.HasSuffix(col.Default, "''") {
+		col.Default = col.Default[1 : len(col.Default)-1]
+	}
 	if col.Default != "" {
 		res = append(res, "default "+col.Default)
 	}
