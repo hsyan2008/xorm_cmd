@@ -7,7 +7,7 @@ xorm 是一组数据库操作命令行工具。
 
 ## 源码安装
 
-`go get xorm.io/cmd/xorm`
+`go get github.com/hsyan2008/xorm_cmd`
 
 执行以上命令会安装如下依赖:
 
