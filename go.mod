@@ -1,4 +1,4 @@
-module xorm.io/cmd
+module github.com/hsyan2008/xorm_cmd
 
 go 1.14
 
